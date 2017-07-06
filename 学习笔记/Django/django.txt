@@ -1,0 +1,13 @@
+migrate:
+Migrations are how Django stores changes to your models (and thus your database schema) - 
+they¡¯re just files on disk. You can read the migration for your new model if you like; 
+it¡¯s the file polls/migrations/0001_initial.py. Don¡¯t worry, you¡¯re not expected to read
+them every time Django makes one, but they¡¯re designed to be human-editable in case you 
+want to manually tweak how Django changes things.
+
+makemigrate:
+By running makemigrations, you¡¯re telling Django that you¡¯ve made some changes to your models 
+(in this case, you¡¯ve made new ones) and that you¡¯d like the changes to be stored as a migration.
+
+Run python manage.py makemigrations to create migrations for those changes
+Run python manage.py migrate to apply those changes to the database.

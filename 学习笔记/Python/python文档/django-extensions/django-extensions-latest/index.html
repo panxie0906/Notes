@@ -1,0 +1,2232 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>django-extensions 1.7.8 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="None" href="index.html#document-index"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://django-extensions.readthedocs.io/en/latest/" />
+
+<link rel="stylesheet" href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="text/javascript" src="_static/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'index'
+</script>
+
+<script type="text/javascript" src="_static/readthedocs-dynamic-include.js"></script>
+
+<!-- end RTD <extrahead> --></head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html#document-index" class="icon icon-home"> django-extensions
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-installation_instructions">Installation instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#for-usage">For usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#for-development">For development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#configuration">Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-command_extensions">Current Command Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-command_extension_ideas">Ideas for New Command Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-command_signals">Command Signals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#basic-example">Basic Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#custom-permissions-for-all-models">Custom Permissions For All Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#using-pre-post-signals-on-your-own-commands">Using pre/post signals on your own commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-admin_extensions">Current Admin Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-shell_plus">shell_plus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#interactive-python-shells">Interactive Python Shells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#additional-imports">Additional Imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#database-application-signature">Database application signature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#sql-queries">SQL queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-create_app">create_app</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-generated-from-sample-dia">Example generated from sample.dia</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-delete_squashed_migrations">delete_squashed_migrations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-dumpscript">dumpscript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#why">Why?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#what-it-can-t-do-yet">What it can&#8217;t do (yet!)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#how">How?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#caveats">Caveats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#naming-conflicts">Naming conflicts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-runscript">RunScript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#passing-arguments">Passing arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#debugging">Debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-export_emails">export_emails</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#supported-formats">Supported Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#address">address</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#google">google</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#outlook">outlook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#linkedin">linkedin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#vcard">vcard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-field_extensions">Field Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#current-database-model-field-extensions">Current Database Model Field Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-graph_models">Graph models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#selecting-a-library">Selecting a library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#default-settings">Default Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#templates">Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-jobs_scheduling">Jobs scheduling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#jobsscheduling">JobsScheduling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#this-page-is-very-much-a-work-in-progress">This page is very much a  Work In Progress</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-model_extensions">Model extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#current-database-model-extensions">Current Database Model Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-namespace_proposal">Namespace proposal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#proposal-of-a-namespace">Proposal of a Namespace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-print_settings">print_settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#more-info">More Info</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-runprofileserver">RunProfileServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#gather-profile-stats-py">gather_profile_stats.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#profiler-choice">Profiler choice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#kcachegrind">KCacheGrind</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#links">Links</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-runserver_plus">RunServerPlus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#view-source">View Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#interactive-debugging-console">Interactive Debugging Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#ssl">SSL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#io-calls-and-cpu-usage">IO Calls and CPU Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#debugger-pin">Debugger PIN</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-sync_s3">sync_s3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#required-libraries-and-settings">Required libraries and settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#optional-settings">Optional settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-sqldiff">sqldiff</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#supported-databases">Supported Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#exit-codes">Exit Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-sqlcreate">sqlcreate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#postgresql">PostgreSQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#mysql">MySQL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#known-issues">Known Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-sqldsn">sqldsn</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#supported-databases">Supported Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#exit-codes">Exit Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#example-usage">Example Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-validate_templates">validate_templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#options">Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#verbosity">verbosity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#break">break</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#includes">includes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#settings">Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#validate-templates-extra-template-dirs">VALIDATE_TEMPLATES_EXTRA_TEMPLATE_DIRS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html#document-index">django-extensions</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+        
+      <li>django-extensions 1.7.8 documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/django-extensions/django-extensions/blob/master/docs/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-the-django-extensions-documentation">
+<h1>Welcome to the django-extensions documentation!<a class="headerlink" href="#welcome-to-the-django-extensions-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Django Extensions is a collection of custom extensions for the Django Framework.</p>
+<p>These include management commands, additional database fields, admin extensions and
+much more.</p>
+<p><a class="reference external" href="https://django-extensions-zh.readthedocs.io/zh_CN/latest/">这篇文档当然还有中文版</a></p>
+</div>
+<div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>The easiest way to figure out what Django Extensions are all about is to watch the <a class="reference external" href="http://ericholscher.com/blog/2008/sep/12/screencast-django-command-extensions/">excellent screencast by Eric Holscher</a>. In a couple minutes Eric walks you through a half a dozen command extensions.</p>
+</div>
+<div class="section" id="getting-it">
+<h1>Getting it<a class="headerlink" href="#getting-it" title="Permalink to this headline">¶</a></h1>
+<p>You can get Django Extensions by using pip or easy_install:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install django-extensions
+or
+$ easy_install django-extensions
+</pre></div>
+</div>
+<p>If you want to install it from source, grab the git repository and run setup.py:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone git://github.com/django-extensions/django-extensions.git
+$ cd django-extensions
+$ python setup.py install
+</pre></div>
+</div>
+<p>For more detailed instructions check out our <a class="reference internal" href="index.html#document-installation_instructions"><span class="doc">Installation instructions</span></a>. Enjoy.</p>
+</div>
+<div class="section" id="compatibility-with-versions-of-python-and-django">
+<h1>Compatibility with versions of Python and Django<a class="headerlink" href="#compatibility-with-versions-of-python-and-django" title="Permalink to this headline">¶</a></h1>
+<p>We follow the Django guidelines for supported Python and Django versions. See more at <a class="reference external" href="https://docs.djangoproject.com/en/dev/internals/release-process/#supported-versions">Django Supported Versions</a></p>
+<p>This might mean the django-extensions may work with older or unsupported versions but we do not guarantee it and most likely will not fix bugs related to incompatibilities with older versions.</p>
+<p>At this time we test on and thrive to support valid combinations of Python 2.7, 3.4, 3.5, pypy and pypy3 with Django versions 1.8 and 1.9.</p>
+</div>
+<div class="section" id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-installation_instructions"></span><div class="section" id="installation-instructions">
+<h2>Installation instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Installing django-extensions</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="for-usage">
+<h4>For usage<a class="headerlink" href="#for-usage" title="Permalink to this headline">¶</a></h4>
+<p>You can use pip to install django-extensions for usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install django-extensions
+</pre></div>
+</div>
+</div>
+<div class="section" id="for-development">
+<h4>For development<a class="headerlink" href="#for-development" title="Permalink to this headline">¶</a></h4>
+<p>Django-extensions is hosted on github:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">extensions</span>
+</pre></div>
+</div>
+<p>Source code can be accessed by performing a Git clone.</p>
+<p>Tracking the development version of <em>django command extensions</em> should be
+pretty stable and will keep you up-to-date with the latests fixes.</p>
+<blockquote>
+<div>$ pip install -e git+https://github.com/django-extensions/django-extensions.git#egg=django-extensions</div></blockquote>
+<p>You find the sources in src/django-extensions now.</p>
+<p>You can verify that the application is available on your PYTHONPATH by opening a python interpreter and entering the following commands:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">django_extensions</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">django_extensions</span><span class="o">.</span><span class="n">VERSION</span>
+<span class="go">(0, 8)</span>
+</pre></div>
+</div>
+<p>Keep in mind that the current code in the git repository may be different from the
+packaged release. It may contain bugs and backwards-incompatible changes but most
+likely also new goodies to play with.</p>
+</div>
+<div class="section" id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
+<p>You will need to add the <em>django_extensions</em> application to the INSTALLED_APPS
+setting of your Django project <em>settings.py</em> file.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;django_extensions&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>This will make sure that Django finds the additional management commands
+provided by <em>django-extensions</em>.</p>
+<p>The next time you invoke <em>./manage.py help</em> you should be able to see all the
+newly available commands.</p>
+<p>Some commands or options require additional applications or python libraries,
+for example:</p>
+<blockquote>
+<div><ul class="simple">
+<li>&#8216;export_emails&#8217; will require the <em>python vobject</em> module to create vcard
+files.</li>
+<li>&#8216;graph_models&#8217; requires <em>pygraphviz</em> to render directly to image file.</li>
+</ul>
+</div></blockquote>
+<p>If the given application or python library is not installed on your system (or
+not in the python path) the executed command will raise an exception and inform
+you of the missing dependency.</p>
+</div>
+</div>
+</div>
+<span id="document-command_extensions"></span><div class="section" id="current-command-extensions">
+<h2>Current Command Extensions<a class="headerlink" href="#current-command-extensions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Current Command Extensions</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#document-shell_plus"><span class="doc">shell_plus</span></a> - An enhanced version of the Django shell.  It will autoload
+all your models making it easy to work with the ORM right away.</li>
+<li><em>admin_generator</em> - Generate automatic Django Admin classes by providing an app name. Outputs
+source code at STDOUT.</li>
+<li><em>clean_pyc</em> - Remove all python bytecode compiled files from the project</li>
+<li><a class="reference external" href="create_app.html">create_app</a> - Creates an application directory structure for the specified
+app name.  This command allows you to specify the &#8211;template option where you
+can indicate a template directory structure to use as your default.</li>
+<li><em>create_command</em> - Creates a command extension directory structure within the
+specified application.  This makes it easy to get started with adding a
+command extension to your application.</li>
+<li><em>create_template_tags</em> - Creates a template tag directory structure within the
+specified application.</li>
+<li><em>create_jobs</em> - Creates a Django jobs command directory structure for the
+given app name in the current directory.  This is part of the impressive jobs
+system.</li>
+<li><em>clear_cache</em> - Clear django cache, useful when testing or deploying.</li>
+<li><em>compile_pyc</em> - Compile python bytecode files for the project.</li>
+<li><em>describe_form</em> - Used to display a form definition for a model. Copy and
+paste the contents into your forms.py and you&#8217;re ready to go.</li>
+<li><a class="reference internal" href="index.html#document-delete_squashed_migrations"><span class="doc">delete_squashed_migrations</span></a> - Deletes leftover migrations after
+squashing and converts squashed migration to a normal one.</li>
+<li><a class="reference internal" href="index.html#document-dumpscript"><span class="doc">dumpscript</span></a> - Generates a Python script that will
+repopulate the database using objects. The advantage of this approach is that
+it is easy to understand, and more flexible than directly populating the
+database, or using XML.</li>
+<li><a class="reference external" href="export_emails.html">export_emails</a> - export the email addresses for your
+users in one of many formats.  Currently supports Address, Google, Outlook,
+LinkedIn, and VCard formats.</li>
+<li><em>find_template</em> - Finds the location of the given template by resolving its path</li>
+<li><em>generate_secret_key</em> - Creates a new secret key that you can put in your
+settings.py module.</li>
+<li><a class="reference external" href="graph_models.html">graph_models</a> - Creates a <a class="reference external" href="http://www.graphviz.org/">GraphViz</a> dot file.  You need
+to send this output to a file yourself.  Great for graphing your models. Pass
+multiple application names to combine all the models into a single dot file.</li>
+<li><em>mail_debug</em> - Starts a mail server which echos out the contents of the email
+instead of sending it.</li>
+<li><em>notes</em> - Show all annotations like TODO, FIXME, BUG, HACK, WARNING, NOTE or XXX in your py and HTML files.</li>
+<li><em>passwd</em> - Makes it easy to reset a user&#8217;s password.</li>
+<li><em>pipchecker</em> - Scan pip requirement file(s)s for out-of-date packages. Similar to
+<code class="docutils literal"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">-o</span></code> which used installed packages (in virtualenv) instead of requirements file(s).</li>
+<li><a class="reference external" href="print_settings.html">print_settings</a> - Similar to <code class="docutils literal"><span class="pre">diffsettings</span></code> but shows <em>selected</em>
+active Django settings or <em>all</em> if no args passed.</li>
+<li><em>print_user_for_session</em> - Print the user information for the provided
+session key. this is very helpful when trying to track down the person who
+experienced a site crash.
+It seems this works only if setting <code class="docutils literal"><span class="pre">SESSION_ENGINE</span></code> is
+<code class="docutils literal"><span class="pre">'django.contrib.sessions.backends.db'</span></code> (default value).</li>
+<li><em>drop_test_database</em> - Drops the test database. Usefull when running Django
+test via some automated system (BuildBot, Jenkins, etc) and making sure that
+the test database is always dropped at the end.</li>
+<li><em>reset_db</em> - Resets a database (currently sqlite3, mysql, postgres). Uses &#8220;DROP DATABASE&#8221; and &#8220;CREATE DATABASE&#8221;.</li>
+<li><em>runjob</em> - Run a single maintenance job.  Part of the jobs system.</li>
+<li><em>runjobs</em> - Runs scheduled maintenance jobs. Specify hourly, daily, weekly,
+monthly.  Part of the jobs system.</li>
+<li><a class="reference internal" href="index.html#document-runprofileserver"><span class="doc">runprofileserver</span></a> - Starts <em>runserver</em> with hotshot/profiling tools enabled.
+I haven&#8217;t had a chance to check this one out, but it looks really cool.</li>
+<li><a class="reference external" href="runscript.html">runscript</a> - Runs a script in the django context.</li>
+<li><a class="reference external" href="runserver_plus.html">runserver_plus</a> - The standard runserver stuff but with
+the Werkzeug debugger baked in. Requires <a class="reference external" href="http://werkzeug.pocoo.org/">Werkzeug</a>. This one kicks ass.</li>
+<li><em>set_fake_emails</em> - Give all users a new email based on their account data (&#8220;%(username)s&#64;example.com&#8221; by default). Possible parameters are: username, first_name, last_name. <em>DEBUG only</em></li>
+<li><em>set_fake_passwords</em> -  Sets all user passwords to a common value (<em>password</em> by default). <em>DEBUG only</em>.</li>
+<li><em>show_template_tags</em> - Displays template tags and filters available in the current project.</li>
+<li><em>show_urls</em> - Displays the url routes that are defined in your project. Very
+crude at this point.</li>
+<li><a class="reference internal" href="index.html#document-sqldiff"><span class="doc">sqldiff</span></a> - Prints the (approximated) difference between an app&#8217;s models and
+what is in the database.  This is very nice, but also very experimental at
+the moment.  It can not catch everything but it&#8217;s a great sanity check.</li>
+<li><a class="reference internal" href="index.html#document-sqlcreate"><span class="doc">sqlcreate</span></a> - Generates the SQL to create your database for you, as specified
+in settings.py.</li>
+<li><a class="reference internal" href="index.html#document-sqldsn"><span class="doc">sqldsn</span></a> - Reads the Django settings and extracts the parameters needed
+to connect to databases using other programs.</li>
+<li><a class="reference external" href="sync_s3.html">sync_s3</a> - Copies files found in settings.MEDIA_ROOT to S3.
+Optionally can also gzip CSS and Javascript files and set the
+Content-Encoding header, and also set a far future expires header for browser
+caching.</li>
+<li><em>sync_data</em> - Makes the current database have the same data as the fixture(s), no more, no less.</li>
+<li><em>unreferenced_files</em> - Prints a list of all files in MEDIA_ROOT that are not referenced in the database.</li>
+<li><em>update_permissions</em> - Reloads permissions for specified apps, or all apps if no args are specified.</li>
+<li><em>validate_templates</em> - Validate templates on syntax and compile errors.</li>
+<li><em>set_default_site</em> - Set parameters of the default <cite>django.contrib.sites</cite> Site using <cite>name</cite> and <cite>domain</cite> or <cite>system-fqdn</cite>.</li>
+</ul>
+</div>
+<span id="document-command_extension_ideas"></span><div class="section" id="ideas-for-new-command-extensions">
+<h2>Ideas for New Command Extensions<a class="headerlink" href="#ideas-for-new-command-extensions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Here are some ideas for some future command extensions.</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>create form/manager for App</li>
+<li>CSS and JS concatenation and minification scripts</li>
+</ul>
+</div>
+<span id="document-command_signals"></span><div class="section" id="command-signals">
+<h2>Command Signals<a class="headerlink" href="#command-signals" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Signals fired before and after a command is executed.</td>
+</tr>
+</tbody>
+</table>
+<p>A signal is thrown pre/post each management command allowing your application
+to hook into each commands execution.</p>
+<div class="section" id="basic-example">
+<h3>Basic Example<a class="headerlink" href="#basic-example" title="Permalink to this headline">¶</a></h3>
+<p>An example hooking into show_template_tags:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django_extensions.management.signals</span> <span class="k">import</span> <span class="n">pre_command</span><span class="p">,</span> <span class="n">post_command</span>
+<span class="kn">from</span> <span class="nn">django_extensions.management.commands.show_template_tags</span> <span class="k">import</span> <span class="n">Command</span>
+
+<span class="k">def</span> <span class="nf">pre_receiver</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">):</span>
+  <span class="c1"># I&#39;m executed prior to the management command</span>
+
+<span class="k">def</span> <span class="nf">post_receiver</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">,</span> <span class="n">outcome</span><span class="p">):</span>
+  <span class="c1"># I&#39;m executed after the management command</span>
+
+<span class="n">pre_command</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">pre_receiver</span><span class="p">,</span> <span class="n">Command</span><span class="p">)</span>
+<span class="n">post_command</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">post_receiver</span><span class="p">,</span> <span class="n">Command</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-permissions-for-all-models">
+<h3>Custom Permissions For All Models<a class="headerlink" href="#custom-permissions-for-all-models" title="Permalink to this headline">¶</a></h3>
+<p>You can use the post signal to hook into the <code class="docutils literal"><span class="pre">update_permissions</span></code> command so that
+you can add your own permissions to each model.</p>
+<p>For instance, lets say you want to add <code class="docutils literal"><span class="pre">list</span></code> and <code class="docutils literal"><span class="pre">view</span></code> permissions to
+each model. You could do this by adding them to the <code class="docutils literal"><span class="pre">permissions</span></code> tuple inside
+your models <code class="docutils literal"><span class="pre">Meta</span></code> class but this gets pretty tedious.</p>
+<p>An easier solution is to hook into the <code class="docutils literal"><span class="pre">update_permissions</span></code> call, as follows;</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.db.models.signals</span> <span class="k">import</span> <span class="n">post_syncdb</span>
+<span class="kn">from</span> <span class="nn">django.contrib.contenttypes.models</span> <span class="k">import</span> <span class="n">ContentType</span>
+<span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="k">import</span> <span class="n">Permission</span>
+<span class="kn">from</span> <span class="nn">django_extensions.management.signals</span> <span class="k">import</span> <span class="n">post_command</span>
+<span class="kn">from</span> <span class="nn">django_extensions.management.commands.update_permissions</span> <span class="k">import</span> <span class="n">Command</span> <span class="k">as</span> <span class="n">UpdatePermissionsCommand</span>
+
+<span class="k">def</span> <span class="nf">add_permissions</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  Add view and list permissions to all content types.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1"># for each of our content types</span>
+  <span class="k">for</span> <span class="n">content_type</span> <span class="ow">in</span> <span class="n">ContentType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+
+    <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="s1">&#39;list&#39;</span><span class="p">]:</span>
+      <span class="c1"># build our permission slug</span>
+      <span class="n">codename</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">content_type</span><span class="o">.</span><span class="n">model</span><span class="p">)</span>
+
+      <span class="k">try</span><span class="p">:</span>
+        <span class="n">Permission</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">,</span> <span class="n">codename</span><span class="o">=</span><span class="n">codename</span><span class="p">)</span>
+        <span class="c1"># Already exists, ignore</span>
+      <span class="k">except</span> <span class="n">Permission</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="c1"># Doesn&#39;t exist, add it</span>
+        <span class="n">Permission</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">content_type</span><span class="o">=</span><span class="n">content_type</span><span class="p">,</span>
+                      <span class="n">codename</span><span class="o">=</span><span class="n">codename</span><span class="p">,</span>
+                      <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Can </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">content_type</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+        <span class="nb">print</span> <span class="s2">&quot;Added </span><span class="si">%s</span><span class="s2"> permission for </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">content_type</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="n">post_command</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">add_permissions</span><span class="p">,</span> <span class="n">UpdatePermissionsCommand</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Each time <code class="docutils literal"><span class="pre">update_permissions</span></code> is called <code class="docutils literal"><span class="pre">add_permissions</span></code> will be called which
+ensures there are view and list permissions to all content types.</p>
+</div>
+<div class="section" id="using-pre-post-signals-on-your-own-commands">
+<h3>Using pre/post signals on your own commands<a class="headerlink" href="#using-pre-post-signals-on-your-own-commands" title="Permalink to this headline">¶</a></h3>
+<p>The signals are implemented using a decorator on the handle method of a management command,
+thus using this functionality in your own application is trivial:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django_extensions.management.utils</span> <span class="k">import</span> <span class="n">signalcommand</span>
+
+<span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+
+  <span class="nd">@signalcommand</span>
+  <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-admin_extensions"></span><div class="section" id="current-admin-extensions">
+<h2>Current Admin Extensions<a class="headerlink" href="#current-admin-extensions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Current Field Extensions</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><em>ForeignKeyAutocompleteAdmin</em> - ForeignKeyAutocompleteAdmin will enable the
+admin app to show ForeignKey fields with an search input field. The search
+field is rendered by the ForeignKeySearchInput form widget and uses jQuery
+to do configurable autocompletion.</li>
+</ul>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>To enable the Admin Autocomplete you can follow this code example
+in your admin.py file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="k">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">foo.models</span> <span class="k">import</span> <span class="n">Permission</span>
+<span class="kn">from</span> <span class="nn">django_extensions.admin</span> <span class="k">import</span> <span class="n">ForeignKeyAutocompleteAdmin</span>
+
+
+<span class="k">class</span> <span class="nc">PermissionAdmin</span><span class="p">(</span><span class="n">ForeignKeyAutocompleteAdmin</span><span class="p">):</span>
+    <span class="c1"># User is your FK attribute in your model</span>
+    <span class="c1"># first_name and email are attributes to search for in the FK model</span>
+    <span class="n">related_search_fields</span> <span class="o">=</span> <span class="p">{</span>
+       <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">),</span>
+    <span class="p">}</span>
+
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;avatar&#39;</span><span class="p">,</span> <span class="s1">&#39;is_active&#39;</span><span class="p">)</span>
+
+    <span class="o">...</span>
+
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Permission</span><span class="p">,</span> <span class="n">PermissionAdmin</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you are using django-reversion you should follow this code example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="k">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">foo.models</span> <span class="k">import</span> <span class="n">MyVersionModel</span>
+<span class="kn">from</span> <span class="nn">reversion.admin</span> <span class="k">import</span> <span class="n">VersionAdmin</span>
+<span class="kn">from</span> <span class="nn">django_extensions.admin</span> <span class="k">import</span> <span class="n">ForeignKeyAutocompleteAdmin</span>
+
+
+<span class="k">class</span> <span class="nc">MyVersionModelAdmin</span><span class="p">(</span><span class="n">VersionAdmin</span><span class="p">,</span> <span class="n">ForeignKeyAutocompleteAdmin</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">MyVersionModel</span><span class="p">,</span> <span class="n">MyVersionModelAdmin</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you need to limit the autocomplete search, you can override the
+<code class="docutils literal"><span class="pre">get_related_filter</span></code> method of the admin. For example if you want to allow
+non-superusers to attach attachments only to articles they own you can use:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AttachmentAdmin</span><span class="p">(</span><span class="n">ForeignKeyAutocompleteAdmin</span><span class="p">):</span>
+
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">get_related_filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">Article</span><span class="p">)</span> <span class="ow">or</span> <span class="n">user</span><span class="o">.</span><span class="n">is_superuser</span><span class="p">():</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">AttachmentAdmin</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_related_filter</span><span class="p">(</span>
+                <span class="n">model</span><span class="p">,</span> <span class="n">request</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">Q</span><span class="p">(</span><span class="n">owner</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that this does not protect your application from malicious attempts to
+circumvent it (e.g. sending fabricated requests via cURL).</p>
+</div>
+</div>
+<span id="document-shell_plus"></span><div class="section" id="shell-plus">
+<h2>shell_plus<a class="headerlink" href="#shell-plus" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Django shell with autoloading of the apps database models</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="interactive-python-shells">
+<h3>Interactive Python Shells<a class="headerlink" href="#interactive-python-shells" title="Permalink to this headline">¶</a></h3>
+<p>There is support for three different types of interactive python shells.</p>
+<p>IPython:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --ipython
+</pre></div>
+</div>
+<p>BPython:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --bpython
+</pre></div>
+</div>
+<p>Python:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --plain
+</pre></div>
+</div>
+<p>The default resolution order is: bpython, ipython, python.</p>
+<p>You can also set the configuration option SHELL_PLUS to explicitly specify which version you want.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Always use IPython for shell_plus</span>
+<span class="n">SHELL_PLUS</span> <span class="o">=</span> <span class="s2">&quot;ipython&quot;</span>
+</pre></div>
+</div>
+<p>It is also possible to use <a class="reference external" href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">IPython Notebook</a>, an interactive Python shell which
+uses a web browser as its user interface, as an alternative shell:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --notebook
+</pre></div>
+</div>
+<p>In addition to being savable, IPython Notebooks can be updated (while running) to reflect changes in a Django application&#8217;s code with the menu command <cite>Kernel &gt; Restart</cite>.</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, models from your own apps and other people&#8217;s apps have colliding names,
+or you may want to completely skip loading an app&#8217;s models. Here are some examples of how to do that.</p>
+<p>Note: These settings are only used inside shell_plus and will not affect your environment.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Rename the automatic loaded module Messages in the app blog to blog_messages.</span>
+<span class="n">SHELL_PLUS_MODEL_ALIASES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;blog&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Messages&#39;</span><span class="p">:</span> <span class="s1">&#39;blog_messages&#39;</span><span class="p">},}</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Prefix all automatically loaded models in the app blog with myblog.</span>
+<span class="n">SHELL_PLUS_APP_PREFIXES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;blog&#39;</span><span class="p">:</span> <span class="s1">&#39;myblog&#39;</span><span class="p">,}</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Dont load the &#39;sites&#39; app, and skip the model &#39;pictures&#39; in the app &#39;blog&#39;</span>
+<span class="n">SHELL_PLUS_DONT_LOAD</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sites&#39;</span><span class="p">,</span> <span class="s1">&#39;blog.pictures&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>You can also combine model_aliases and dont_load.</p>
+<p>When referencing nested modules, e.g. <cite>somepackage.someapp.models.somemodel</cite>, omit the
+package name and the reference to <cite>models</cite>. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SHELL_PLUS_DONT_LOAD</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;someapp.somemodel&#39;</span><span class="p">,</span> <span class="p">]</span>  <span class="c1"># This works</span>
+<span class="n">SHELL_PLUS_DONT_LOAD</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;somepackage.someapp.models.somemodel&#39;</span><span class="p">,</span> <span class="p">]</span>  <span class="c1"># This does NOT work</span>
+</pre></div>
+</div>
+<p>It is possible to ignore autoloaded modules when using manage.py, like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --dont-load app1 --dont-load app2.module1
+</pre></div>
+</div>
+<p>Commandline parameters and settings in the configuration file are merged, so you can
+safely append modules to ignore from the commandline for one-time usage.</p>
+<p>There are two settings that you can use to pass your custom options to the IPython
+Notebook in your Django settings.</p>
+<p>The first one is <code class="docutils literal"><span class="pre">NOTEBOOK_ARGUMENTS</span></code> that can be used to hold those options that available via:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ipython notebook -h
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">NOTEBOOK_ARGUMENTS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;--ip&#39;</span><span class="p">,</span> <span class="s1">&#39;x.x.x.x&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;--port&#39;</span><span class="p">,</span> <span class="s1">&#39;xx&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Another one is <code class="docutils literal"><span class="pre">IPYTHON_ARGUMENTS</span></code> that for those options that available via:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ipython -h
+</pre></div>
+</div>
+<p>The Django settings module and database models are auto-loaded into the
+interactive shell&#8217;s global namespace also for IPython Notebook.</p>
+<p>Auto-loading is done by a custom IPython extension which is activated by
+default by passing the
+<code class="docutils literal"><span class="pre">--ext</span> <span class="pre">django_extensions.management.notebook_extension</span></code>
+argument to the Notebook.  If you need to pass custom options to the IPython
+Notebook, you can override the default options in your Django settings using
+the <code class="docutils literal"><span class="pre">IPYTHON_ARGUMENTS</span></code> setting.  For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IPYTHON_ARGUMENTS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;--ext&#39;</span><span class="p">,</span> <span class="s1">&#39;django_extensions.management.notebook_extension&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;--ext&#39;</span><span class="p">,</span> <span class="s1">&#39;myproject.notebook_extension&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;--debug&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>To activate auto-loading, remember to either include the django-extensions&#8217; default
+notebook extension or copy its auto-loading code into your own extension.</p>
+<p>Note that the IPython Notebook feature doesn&#8217;t currently honor the
+<code class="docutils literal"><span class="pre">--dont-load</span></code> option.</p>
+</div>
+<div class="section" id="additional-imports">
+<h3>Additional Imports<a class="headerlink" href="#additional-imports" title="Permalink to this headline">¶</a></h3>
+<p>In addition to importing the models you can specify other items to import by default.
+These are specified in SHELL_PLUS_PRE_IMPORTS and SHELL_PLUS_POST_IMPORTS. The former is imported
+before any other imports (such as the default models import) and the latter is imported after any
+other imports. Both have similar syntax. So in your settings.py file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SHELL_PLUS_PRE_IMPORTS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;module.submodule1&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;class1&#39;</span><span class="p">,</span> <span class="s1">&#39;function2&#39;</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">&#39;module.submodule2&#39;</span><span class="p">,</span> <span class="s1">&#39;function3&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;module.submodule3&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;module.submodule4&#39;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>The above example would directly translate to the following python code which would be executed before
+the automatic imports:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">module.submodule1</span> <span class="k">import</span> <span class="n">class1</span><span class="p">,</span> <span class="n">function2</span>
+<span class="kn">from</span> <span class="nn">module.submodule2</span> <span class="k">import</span> <span class="n">function3</span>
+<span class="kn">from</span> <span class="nn">module.submodule3</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">module.submodule4</span>
+</pre></div>
+</div>
+<p>These symbols will be available as soon as the shell starts.</p>
+</div>
+<div class="section" id="database-application-signature">
+<h3>Database application signature<a class="headerlink" href="#database-application-signature" title="Permalink to this headline">¶</a></h3>
+<p>If using PostgreSQL the <code class="docutils literal"><span class="pre">application_name</span></code> is set by default to
+<code class="docutils literal"><span class="pre">django_shell</span></code> to help  identify queries made under shell_plus.</p>
+</div>
+<div class="section" id="sql-queries">
+<h3>SQL queries<a class="headerlink" href="#sql-queries" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to print SQL queries as they&#8217;re executed in shell_plus like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py shell_plus --print-sql
+</pre></div>
+</div>
+<p>You can also set the configuration option SHELL_PLUS_PRINT_SQL to omit the above command line option.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># print SQL queries in shell_plus</span>
+<span class="n">SHELL_PLUS_PRINT_SQL</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-create_app"></span><div class="section" id="create-app">
+<h2>create_app<a class="headerlink" href="#create-app" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Creates an application directory structure for the specified application name.</td>
+</tr>
+</tbody>
+</table>
+<p>This command allows you to specify the &#8211;template option where you can indicate
+a template directory structure to use as your default.</p>
+<p>The &#8211;diagram option generates the models.py and admin.py from a .dia file.</p>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>All examples assume your current directory is the project directory and
+settings.py is under it.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Get command help</span>
+<span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">create_app</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Generate models.py and admin.py from [APP_NAME].dia file. This file should</span>
+<span class="c1"># be placed in the settings.py directory.</span>
+<span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">create_app</span> <span class="o">-</span><span class="n">d</span> <span class="n">APP_NAME</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-generated-from-sample-dia">
+<h3>Example generated from sample.dia<a class="headerlink" href="#example-generated-from-sample-dia" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">create_app</span> <span class="o">--</span><span class="n">diagram</span><span class="o">=</span><span class="n">sample</span><span class="o">.</span><span class="n">dia</span> <span class="n">webdata</span>
+</pre></div>
+</div>
+<p>-d switch or &#8211;diagram option use <a class="reference external" href="https://svn.devnull.li/main/pythonware/dia2django/trunk/doc/">dia2django</a> to generate models.py and is
+better documented in <a class="reference external" href="http://code.djangoproject.com/wiki/Dia2Django">django wiki</a>.</p>
+</div>
+</div>
+<span id="document-delete_squashed_migrations"></span><div class="section" id="delete-squashed-migrations">
+<h2>delete_squashed_migrations<a class="headerlink" href="#delete-squashed-migrations" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Deletes leftover migrations after squashing and converts squashed
+migration to a normal one.</td>
+</tr>
+</tbody>
+</table>
+<p>Deletes leftover migrations after squashing and converts squashed migration to
+a normal one by removing the replaces attribute. This automates the clean up
+procedure outlined at the end of the <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/migrations/#migration-squashing">Django migration squashing
+documentation</a>. Modifies your source tree! Use with care!</p>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>With <em>django-extensions</em> installed you cleanup squashed migrations using the
+<em>delete_squashed_migrations</em> command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Delete leftover migrations from the first squashed migration found in myapp
+$ ./manage.py delete_squashed_migrations myapp
+
+# As above but non-interactive
+$ ./manage.py --noinput delete_squashed_migrations myapp
+
+# Explicitly specify the squashed migration to clean up
+$ ./manage.py delete_squashed_migrations myapp 0001_squashed
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-dumpscript"></span><div class="section" id="dumpscript">
+<h2>dumpscript<a class="headerlink" href="#dumpscript" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Generates a standalone Python script that will repopulate the database using objects.</td>
+</tr>
+</tbody>
+</table>
+<p>The <cite>dumpscript</cite> command generates a standalone Python script that will
+repopulate the database using objects. The advantage of this approach is that
+it is easy to understand, and more flexible than directly populating the
+database, or using XML.</p>
+<div class="section" id="why">
+<h3>Why?<a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h3>
+<p>There are a few benefits to this:</p>
+<ul class="simple">
+<li>less drama with model evolution: foreign keys handled naturally without IDs,
+new and removed columns are ignored</li>
+<li>edit script to create 1,000s of generated entries using for loops, generated
+names, python modules etc.</li>
+</ul>
+<p>For example, an edited script can populate the database with test data:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+    <span class="n">poll</span> <span class="o">=</span> <span class="n">Poll</span><span class="p">()</span>
+    <span class="n">poll</span><span class="o">.</span><span class="n">question</span> <span class="o">=</span> <span class="s2">&quot;Question #</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span>
+    <span class="n">poll</span><span class="o">.</span><span class="n">pub_date</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span><span class="mi">01</span><span class="p">,</span><span class="mi">01</span><span class="p">)</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">poll</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Real databases will probably be bigger and more complicated so it is useful
+to enter some values using the admin interface and then edit the generated
+scripts.</p>
+</div>
+<div class="section" id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em>ForeignKey</em> and <em>ManyToManyFields</em> (using python variables, not object IDs)</li>
+<li>Self-referencing <em>ForeignKey</em> (and M2M) fields</li>
+<li>Sub-classed models</li>
+<li><em>ContentType</em> fields and generic relationships (but see issue 43)</li>
+<li>Recursive references</li>
+<li><em>AutoFields</em> are excluded</li>
+<li>Parent models are only included when no other child model links to it</li>
+<li>Individual models can be referenced</li>
+</ul>
+</div>
+<div class="section" id="what-it-can-t-do-yet">
+<h3>What it can&#8217;t do (yet!)<a class="headerlink" href="#what-it-can-t-do-yet" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Ideal handling of generic relationships (ie no <em>AutoField</em> references):
+issue 43</li>
+<li>Intermediate join tables: issue 48</li>
+<li>GIS fields: issue 72</li>
+</ul>
+</div>
+<div class="section" id="how">
+<h3>How?<a class="headerlink" href="#how" title="Permalink to this headline">¶</a></h3>
+<p>To dump the data from all the models in a given Django app (<cite>appname</cite>):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py dumpscript appname &gt; scripts/testdata.py
+</pre></div>
+</div>
+<p>To dump the data from just a single model (<cite>appname.ModelName</cite>):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py dumpscript appname.ModelName &gt; scripts/testdata.py
+</pre></div>
+</div>
+<p>To reset a given app, and reload with the saved data:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./manage.py reset appname
+$ ./manage.py runscript testdata
+</pre></div>
+</div>
+<p>Note: Runscript needs <em>scripts</em> to be a module, so create the directory and a
+<em>__init__.py</em> file.</p>
+</div>
+<div class="section" id="caveats">
+<h3>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="naming-conflicts">
+<h4>Naming conflicts<a class="headerlink" href="#naming-conflicts" title="Permalink to this headline">¶</a></h4>
+<p>Please take care that when naming the output files these filenames do not
+clash with other names in your import path. For instance, if the appname is
+the same as the script name, an importerror can occur because rather than importing
+the application modules it tries to load the modules from the dumpscript file itself.</p>
+<p>Examples:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Wrong
+$ ./manage.py dumpscript appname &gt; dumps/appname.py
+
+# Right
+$ ./manage.py dumpscript appname &gt; dumps/appname_all.py
+
+# Right
+$ ./manage.py dumpscript appname.Somemodel &gt; dumps/appname_somemodel.py
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<span id="document-runscript"></span><div class="section" id="runscript">
+<h2>RunScript<a class="headerlink" href="#runscript" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Runs a script in the django context.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>The runscript command lets you run an arbritrary set of python commands within
+the django context. It offers the same usability and functionality as running a
+set of commands in shell accessed by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py shell
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p>This example assumes you have followed the tutorial for Django 1.8+, and
+created a polls app containing a <code class="docutils literal"><span class="pre">Question</span></code> model. We will create a script
+that deletes all of the questions from the database.</p>
+<p>To get started create a scripts directory in your project root, next to
+manage.py:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir scripts
+$ touch scripts/__init__.py
+</pre></div>
+</div>
+<p>Note: The <em>__init__.py</em> file is necessary so that the folder is picked up as a
+python package.</p>
+<p>Next, create a python file with the name of the script you want to run within
+the scripts directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ touch scripts/delete_all_questions.py
+</pre></div>
+</div>
+<p>This file must implement a <em>run()</em> function. This is what gets called when you
+run the script. You can import any models or other parts of your django project
+to use in these scripts.</p>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># scripts/delete_all_questions.py</span>
+
+<span class="kn">from</span> <span class="nn">polls.models</span> <span class="k">import</span> <span class="n">Question</span>
+
+<span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
+    <span class="c1"># Fetch all questions</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="n">Question</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="c1"># Delete questions</span>
+    <span class="n">questions</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note: You can put a script inside a <em>scripts</em> folder in any of your apps too.</p>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>To run any script you use the command <em>runscript</em> with the name of the script
+that you want to run.</p>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runscript delete_all_questions
+</pre></div>
+</div>
+<p>Note: The command first checks for scripts in your apps i.e. <em>app_name/scripts</em>
+folder and runs them before checking for and running scripts in the
+<em>project_root/scripts</em> folder. You can have multiple scripts with the same name
+and they will all be run sequentially.</p>
+</div>
+<div class="section" id="passing-arguments">
+<h3>Passing arguments<a class="headerlink" href="#passing-arguments" title="Permalink to this headline">¶</a></h3>
+<p>You can pass arguments from the command line to your script by passing a space separated
+list of values with <code class="docutils literal"><span class="pre">--script-args</span></code>. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runscript delete_all_questions --script-args staleonly
+</pre></div>
+</div>
+<p>The list of argument values gets passed as arguments to your <em>run()</em> function. For
+example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># scripts/delete_all_questions.py</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">timedelta</span>
+
+<span class="kn">from</span> <span class="nn">django.utils</span> <span class="k">import</span> <span class="n">timezone</span>
+
+<span class="kn">from</span> <span class="nn">polls.models</span> <span class="k">import</span> <span class="n">Question</span>
+
+<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="c1"># Get all questions</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="n">Question</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s1">&#39;staleonly&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="c1"># Only get questions more than 100 days old</span>
+        <span class="n">questions</span> <span class="o">=</span> <span class="n">questions</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pub_date__lt</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">100</span><span class="p">))</span>
+    <span class="c1"># Delete questions</span>
+    <span class="n">questions</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
+<p>If an exception occurs you will not get a traceback by default.  To get a traceback specify <code class="docutils literal"><span class="pre">--traceback</span></code>. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runscript delete_all_questions --traceback
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-export_emails"></span><div class="section" id="export-emails">
+<h2>export_emails<a class="headerlink" href="#export-emails" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">export the email addresses for your users in one of many formats</td>
+</tr>
+</tbody>
+</table>
+<p>Most Django sites include a registered user base. There are times when you
+would like to import these e-mail addresses into other systems (generic mail
+program, Gmail, Google Docs invites, give edit permissions, LinkedIn Group
+pre-approved listing, etc.). The export_emails command extension gives you this
+ability. Exported users can be filtered by Group name association.</p>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Export all the addresses in the &#39;&quot;First Last&quot; &lt;my@addr.com&gt;;&#39; format.
+$ ./manage.py export_emails &gt; addresses.txt
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Export users from the group &#39;Attendees&#39; in the linked in pre-approve Group csv format.
+$ ./manage.py export_emails -g Attendees -f linkedin pycon08.csv
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Create a csv file importable by Gmail or Google Docs
+$ ./manage.py export_emails --format=google google.csv
+</pre></div>
+</div>
+</div>
+<div class="section" id="supported-formats">
+<h3>Supported Formats<a class="headerlink" href="#supported-formats" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="address">
+<h4>address<a class="headerlink" href="#address" title="Permalink to this headline">¶</a></h4>
+<p>This is the default basic text format. Each entry is on its own line in the
+format:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;First Last&quot;</span> <span class="o">&lt;</span><span class="n">user</span><span class="nd">@host</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>This can be used with all known mail programs (that I know about anyway).</p>
+</div>
+<div class="section" id="google">
+<h4>google<a class="headerlink" href="#google" title="Permalink to this headline">¶</a></h4>
+<p>A CSV (comma separated value) format which Google applications can import.
+This can be used to import directly into Gmail, a Gmail mailing group, Google
+Docs invite (to read), Google Docs grant edit permissions, Google Calendar
+invites, etc.</p>
+<p>Only two columns are supplied. One for the person&#8217;s name and one for the email address.
+This is also nice for importing into spreadsheets.</p>
+</div>
+<div class="section" id="outlook">
+<h4>outlook<a class="headerlink" href="#outlook" title="Permalink to this headline">¶</a></h4>
+<p>A CSV (comma separated value) format which Outlook can parse and import.
+Supplies all the columns that Outlook &#8216;requires&#8217;, but only the name and email
+address are supplied.</p>
+</div>
+<div class="section" id="linkedin">
+<h4>linkedin<a class="headerlink" href="#linkedin" title="Permalink to this headline">¶</a></h4>
+<p>A CSV (comma separated value) format which can be imported by <a class="reference external" href="http://www.linkedin.com/static?key=groups_info">LinkedIn Groups</a>
+to pre-approve a list of people for joining the group.</p>
+<p>This supplies 3 columns: first name, last name, and email address. This is the
+best generic csv file for importing into spreadsheets as well.</p>
+</div>
+<div class="section" id="vcard">
+<h4>vcard<a class="headerlink" href="#vcard" title="Permalink to this headline">¶</a></h4>
+<p>A vCard format which Apple Address Book can parse and import.</p>
+</div>
+</div>
+</div>
+<span id="document-field_extensions"></span><div class="section" id="field-extensions">
+<h2>Field Extensions<a class="headerlink" href="#field-extensions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Current Field Extensions</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="current-database-model-field-extensions">
+<h3>Current Database Model Field Extensions<a class="headerlink" href="#current-database-model-field-extensions" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><em>AutoSlugField</em> - AutoSlugfield will automatically create a unique slug
+incrementing an appended number on the slug until it is unique. Inspired by
+SmileyChris&#8217; Unique Slugify snippet.</p>
+<p>AutoSlugField takes a <cite>popuate_from</cite> argument that specifies which field, list of
+fields, or model method the slug will be populated from, for instance:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">slug</span> <span class="o">=</span> <span class="n">AutoSlugField</span><span class="p">(</span><span class="n">populate_from</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;get_author_name&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><cite>populate_from</cite> can traverse a ForeignKey relationship by using Django ORM syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">slug</span> <span class="o">=</span> <span class="n">AutoSlugField</span><span class="p">(</span><span class="n">populate_from</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;related_model__title&#39;</span><span class="p">,</span> <span class="s1">&#39;related_model__get_readable_name&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><em>RandomCharField</em> - AutoRandomCharField will automatically create a
+unique random character field with the specified length. By default
+upper/lower case and digits are included as possible characters. Given
+a length of 8 thats yields 3.4 million possible combinations. A 12
+character field would yield about 2 billion. Below are some examples:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">RandomCharField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">BVm9GEaE</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">RandomCharField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">include_alpha</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">7097</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">RandomCharField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">include_punctuation</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">k[ZS.TR,0LHO</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">RandomCharField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">lowercase</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_digits</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">pzolbemetmok</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><em>CreationDateTimeField</em> - DateTimeField that will automatically set its date
+when the object is first saved to the database. Works in the same way as the
+auto_now_add keyword.</p>
+</li>
+<li><p class="first"><em>ModificationDateTimeField</em> - DateTimeField that will automatically set its
+date when an object is saved to the database. Works in the same way as the
+auto_now keyword. It is possible to preserve the current timestamp by setting update_modified to False:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example</span> <span class="o">=</span> <span class="n">MyTimeStampedModel</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">example</span><span class="o">.</span><span class="n">modified</span>
+<span class="go">datetime.datetime(2016, 3, 18, 10, 3, 39, 740349, tzinfo=&lt;UTC&gt;)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">update_modified</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">example</span><span class="o">.</span><span class="n">modified</span>
+<span class="go">datetime.datetime(2016, 3, 18, 10, 3, 39, 740349, tzinfo=&lt;UTC&gt;)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">example</span><span class="o">.</span><span class="n">modified</span>
+<span class="go">datetime.datetime(2016, 4, 8, 14, 25, 43, 123456, tzinfo=&lt;UTC&gt;)</span>
+</pre></div>
+</div>
+<p>It is also possible to set the attribute directly on the model,
+for example when you don&#8217;t use the TimeStampedModel provided in this package, or when you are in a migration:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example</span> <span class="o">=</span> <span class="n">MyCustomModel</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">example</span><span class="o">.</span><span class="n">modified</span>
+<span class="go">datetime.datetime(2016, 3, 18, 10, 3, 39, 740349, tzinfo=&lt;UTC&gt;)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span><span class="o">.</span><span class="n">update_modified</span><span class="o">=</span><span class="kc">False</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">example</span><span class="o">.</span><span class="n">modified</span>
+<span class="go">datetime.datetime(2016, 3, 18, 10, 3, 39, 740349, tzinfo=&lt;UTC&gt;)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><em>UUIDField</em> - UUIDField for Django, supports all uuid versions that are
+natively supported by the uuid python module.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.4.7: </span>Django 1.8 features a native UUIDField. Django-Extensions will support <em>UUIDField</em> at the very least until Django 1.7 becomes unsupported.</p>
+</div>
+</li>
+<li><p class="first"><em>PostgreSQLUUIDField</em> - UUIDField for Django, uses PostgreSQL uuid type.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.4.7: </span>Django 1.8 features a native UUIDField. Django-Extensions will support <em>UUIDField</em> at the very least until Django 1.7 becomes unsupported.</p>
+</div>
+</li>
+<li><p class="first"><em>EncryptedCharField</em> - CharField which transparently encrypts its value as it goes in and out of the database.  Encryption is handled by <a class="reference external" href="http://www.keyczar.org/">Keyczar</a>.  To use this field you must have Keyczar installed, have generated a primary encryption key, and have <code class="docutils literal"><span class="pre">settings.ENCRYPTED_FIELD_KEYS_DIR</span></code> set to the full path of your keys directory.</p>
+</li>
+<li><p class="first"><em>EncryptedTextField</em> - CharField which transparently encrypts its value as it goes in and out of the database.  Encryption is handled by <a class="reference external" href="http://www.keyczar.org/">Keyczar</a>.  To use this field you must have Keyczar installed, have generated a primary encryption key, and have <code class="docutils literal"><span class="pre">settings.ENCRYPTED_FIELD_KEYS_DIR</span></code> set to the full path of your keys directory.</p>
+</li>
+<li><p class="first"><em>ShortUUIDField</em> - CharField which transparently generates a UUID and pass it to base57. It result in shorter 22 characters values useful e.g. for concise, unambiguous URLS. It&#8217;s possible to get shorter values with length parameter: they are not Universal Unique any more but probability of collision is still low</p>
+</li>
+<li><p class="first"><em>JSONField</em> - a generic TextField that neatly serializes/unserializes JSON objects seamlessly</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.7.3: </span>Django 1.9 features a native JSONField. Django-Extensions will support <em>JSONField</em> at the very least until Django 1.8 becomes unsupported.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<span id="document-graph_models"></span><div class="section" id="graph-models">
+<h2>Graph models<a class="headerlink" href="#graph-models" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Renders a graphical overview of your project or specified apps.</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a <a class="reference external" href="http://www.graphviz.org/">GraphViz</a> dot file for the specified app names based on their models.py.
+You can pass multiple app names and they will all be combined into a single model.
+Output is usually directed to a dot file.</p>
+<p>Several options are available: grouping models, including inheritance,
+excluding models and columns, and changing the layout when rendering to an output
+image.</p>
+<p>With the latest revisions it&#8217;s also possible to specify an output file if
+<a class="reference external" href="https://pygraphviz.github.io/">pygraphviz</a> is installed and render directly to an image or other supported
+file-type.</p>
+<div class="section" id="selecting-a-library">
+<h3>Selecting a library<a class="headerlink" href="#selecting-a-library" title="Permalink to this headline">¶</a></h3>
+<p>You need to select the library to generate the image. You can do so by passing
+the &#8211;pygraphviz or &#8211;pydot parameter, depending on which library you want to use.</p>
+<p>When neither of the command line parameters are given the default is to try and load
+pygraphviz or pydot (in that order) to generate the image.</p>
+<p>To install pygraphviz you usually need to run this command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pygraphviz
+</pre></div>
+</div>
+<p>It is possible you can&#8217;t install it because it needs some C extensions to build. In
+that case you can try other methods to install or you can use PyDot.</p>
+<p>To install pydot you need to run this command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pyparsing==1.5.7
+$ pip install pydot
+</pre></div>
+</div>
+<p>Installation should be fast and easy. Remember to install this exact version of
+pyparsing, otherwise it&#8217;s possible you get this error:</p>
+<blockquote>
+<div>Couldn&#8217;t import dot_parser, loading of dot files will not be possible.</div></blockquote>
+</div>
+<div class="section" id="default-settings">
+<h3>Default Settings<a class="headerlink" href="#default-settings" title="Permalink to this headline">¶</a></h3>
+<p>The option GRAPH_MODELS = {} can be used in the settings file to specify default options:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">GRAPH_MODELS</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;all_applications&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+  <span class="s1">&#39;group_models&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>It uses the same names as on the command line only with the leading two dashes removed and
+the other dashes replaced by underscores.</p>
+</div>
+<div class="section" id="templates">
+<h3>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
+<p>Django templates are used to generate the dot code. This in turn can be drawn into a image
+by libraries like <em>pygraphviz</em> or <em>pydot</em>. You can extend or override the templates if needed.</p>
+<p>Templates used:</p>
+<blockquote>
+<div><ul class="simple">
+<li>django_extensions/graph_models/digraph.dot</li>
+<li>django_extensions/graph_models/label.dot</li>
+<li>django_extensions/graph_models/relation.dot</li>
+</ul>
+</div></blockquote>
+<p>Documentation on how to create dot files can be found here: <a class="reference external" href="http://www.graphviz.org/Documentation.php">http://www.graphviz.org/Documentation.php</a></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Modifying Django&#8217;s default templates behaviour might break <em>graph_models</em></p>
+<p>Please be aware that if you use any <em>template_loaders</em> or extensions that change the
+way templates are rendered that this can cause <em>graph_models</em> to fail.</p>
+<p class="last">An example of this is
+the Django app <em>django-template-minifier</em> this automatically removed the newlines before/after
+template tags even for none-html templates which leads to a mallformed file.</p>
+</div>
+</div>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>With <em>django-extensions</em> installed you can create a dot-file or an
+image by using the <em>graph_models</em> command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Create a dot file
+$ ./manage.py graph_models -a &gt; my_project.dot
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Create a PNG image file called my_project_visualized.png with application grouping
+$ ./manage.py graph_models -a -g -o my_project_visualized.png
+
+# Same example but with explicit selection of pygraphviz or pydot
+$ ./manage.py graph_models --pygraphviz -a -g -o my_project_visualized.png
+$ ./manage.py graph_models --pydot -a -g -o my_project_visualized.png
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Create a dot file for only the &#39;foo&#39; and &#39;bar&#39; applications of your project
+$ ./manage.py graph_models foo bar &gt; my_project.dot
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-jobs_scheduling"></span><div class="section" id="jobs-scheduling">
+<h2>Jobs scheduling<a class="headerlink" href="#jobs-scheduling" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Documentation on creating/using jobs in Django-extensions</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="jobsscheduling">
+<h3>JobsScheduling<a class="headerlink" href="#jobsscheduling" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="this-page-is-very-much-a-work-in-progress">
+<h4>This page is very much a  Work In Progress<a class="headerlink" href="#this-page-is-very-much-a-work-in-progress" title="Permalink to this headline">¶</a></h4>
+<p>Creating jobs works much like management commands work in Django.
+Use create_jobs to make a &#8216;jobs&#8217; directory inside of an application.
+After that create one python file per job.</p>
+<p>Some simple examples are provided by the django_extensions.jobs package.</p>
+<p>A job is a python script with a mandatory Job class which extends from
+HourlyJob, DailyJob, WeeklyJob or MonthlyJob. It has one method that must be
+implemented called &#8216;execute&#8217;, which is called when the job is run.</p>
+<p>The following commands are related to jobs:</p>
+<ul class="simple">
+<li>create_jobs, create the directory structure for jobs</li>
+<li>runjob, run a single job</li>
+<li>runjobs, run all hourly/daily/weekly/monthly jobs</li>
+</ul>
+<p>Use &#8220;runjob(s) -l&#8221; to list all jobs recognized.</p>
+<p>Jobs do not run automatically !</p>
+<p>You must either run a job manually specifying  the exact time on
+which the command is to be run, or use crontab:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@hourly</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runjobs</span> <span class="n">hourly</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@daily</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runjobs</span> <span class="n">daily</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@weekly</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runjobs</span> <span class="n">weekly</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@monthly</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runjobs</span> <span class="n">monthly</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<span id="document-model_extensions"></span><div class="section" id="model-extensions">
+<h2>Model extensions<a class="headerlink" href="#model-extensions" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Current Model Extensions</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="current-database-model-extensions">
+<h3>Current Database Model Extensions<a class="headerlink" href="#current-database-model-extensions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em>TimeStampedModel</em> - TimeStampedModel An abstract base class model that
+provides self-managed &#8220;created&#8221; and &#8220;modified&#8221; fields.</li>
+<li><em>TitleDescriptionModel</em> - An abstract base class model that provides
+&#8220;title&#8221; and &#8220;description&#8221; fields.</li>
+<li><em>TitleSlugDescriptionModel</em> - An abstract base class model that provides
+&#8220;title&#8221; and &#8220;description&#8221; fields and a self-managed &#8220;slug&#8221; field
+that populates from the title.</li>
+</ul>
+</div>
+</div>
+<span id="document-namespace_proposal"></span><div class="section" id="namespace-proposal">
+<h2>Namespace proposal<a class="headerlink" href="#namespace-proposal" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Namespace Proposal</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>Please change / write your proposal for splitting django_extensions into
+namespaces here.</p>
+</div>
+<div class="section" id="proposal-of-a-namespace">
+<h3>Proposal of a Namespace<a class="headerlink" href="#proposal-of-a-namespace" title="Permalink to this headline">¶</a></h3>
+<p>Rough proposal for splitting into functional parts:</p>
+<ul class="simple">
+<li>django_extensions.commands (20% that everbody uses / production)</li>
+<li>django_extensions.commands.development (everything development)</li>
+<li>django_extensions.commands.extra (not fitting about category&#8217;s?)</li>
+<li>django_extensions.db</li>
+<li>django_extensions.templates</li>
+<li>django_extensions.jobs</li>
+</ul>
+<p>The db part should be okay where it is right now. It&#8217;s only used when
+somebody explicitly imports:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django_extensions.db.models</span> <span class="k">import</span> <span class="n">something</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-print_settings"></span><div class="section" id="print-settings">
+<h2>print_settings<a class="headerlink" href="#print-settings" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Django managment command similar to <code class="docutils literal"><span class="pre">diffsettings</span></code> but shows <em>selected</em> active Django settings or <em>all</em> if no args passed.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>Django comes with a <code class="docutils literal"><span class="pre">diffsettings</span></code> command that shows how your project&#8217;s
+settings differ from the Django defaults.  Sometimes it is useful to just see
+the settings that are in effect for your project. This is particularly
+true if you have a more complex system for settings than just a single
+<code class="file docutils literal"><span class="pre">settings.py</span></code> file. For example, you might have settings files that
+import other settings file, such as dev, test, and production settings files
+that source a base settings file.</p>
+<p>This command also supports dumping the data in a few different formats.</p>
+</div>
+<div class="section" id="more-info">
+<h3>More Info<a class="headerlink" href="#more-info" title="Permalink to this headline">¶</a></h3>
+<p>The simplest way to run it is with no arguments:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py print_settings
+</pre></div>
+</div>
+<p>Some variations:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py print_settings --format=json
+$ python manage.py print_settings --format=yaml    # Requires PyYAML
+$ python manage.py print_settings --format=pprint
+$ python manage.py print_settings --format=text
+$ python manage.py print_settings --format=value
+</pre></div>
+</div>
+<p>Show just selected settings:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py print_settings DEBUG INSTALLED_APPS
+$ python manage.py print_settings DEBUG INSTALLED_APPS --format=pprint
+$ python manage.py print_settings INSTALLED_APPS --format=value
+</pre></div>
+</div>
+<p>For more info, take a look at the built-in help:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py print_settings --help
+Usage: manage.py print_settings [options]
+
+Print the active Django settings.
+
+Options:
+  -v VERBOSITY, --verbosity=VERBOSITY
+                        Verbosity level; 0=minimal output, 1=normal output,
+                        2=verbose output, 3=very verbose output
+  --settings=SETTINGS   The Python path to a settings module, e.g.
+                        &quot;myproject.settings.main&quot;. If this isn&#39;t provided, the
+                        DJANGO_SETTINGS_MODULE environment variable will be
+                        used.
+  --pythonpath=PYTHONPATH
+                        A directory to add to the Python path, e.g.
+                        &quot;/home/djangoprojects/myproject&quot;.
+  --traceback           Print traceback on exception
+  --format=FORMAT       Specifies output format.
+  --indent=INDENT       Specifies indent level for JSON and YAML
+  --version             show program&#39;s version number and exit
+  -h, --help            show this help message and exit
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-runprofileserver"></span><div class="section" id="runprofileserver">
+<h2>RunProfileServer<a class="headerlink" href="#runprofileserver" title="Permalink to this headline">¶</a></h2>
+<p><em>We recommend that before you start profiling any language or
+framework you learn enough about it so that you feel comfortable with digging
+into its internals.</em></p>
+<p><em>Without sufficient knowledge it will not only be (very)
+hard but you&#8217;re likely to make wrong assumptions (and fixes). As a rule of thumb,
+clean, well written code will help you a lot more than overzealous
+micro-optimizations will.</em></p>
+<p><em>This document is work in progress. If you feel you can help with
+better/clearer or additional information about profiling Django please leave a
+comment.</em></p>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p><em>runprofileserver</em> starts Django&#8217;s runserver command with hotshot/profiling
+tools enabled. It will save .prof files containing the profiling information
+into the &#8211;prof-path directory. Note that for each request made one profile
+data file is saved.</p>
+<p>By default the profile-data-files are saved in /tmp use the &#8211;prof-path option
+to specify your own target directory. Saving the data in a meaningful directory
+structure helps to keep your profile data organized and keeps /tmp uncluttered.
+(Yes this probably malfunctions systems such as Windows where /tmp does not exist)</p>
+<p>To define profile filenames use &#8211;prof-file option. Default format
+is &#8220;{path}.{duration:06d}ms.{time}&#8221; (Python
+<a class="reference external" href="http://docs.python.org/3/library/string.html#formatspec">Format Specification</a>
+is used).</p>
+<p>Examples:</p>
+<blockquote>
+<div><ul class="simple">
+<li>&#8220;{time}-{path}-{duration}ms&#8221; - to order profile-data-files by request time</li>
+<li>&#8220;{duration:06d}ms.{path}.{time}&#8221; - to order by request duration</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="gather-profile-stats-py">
+<h3>gather_profile_stats.py<a class="headerlink" href="#gather-profile-stats-py" title="Permalink to this headline">¶</a></h3>
+<p>Django comes packed with a tool to aggregate these different prof files into
+one aggregated profile file. This tool is called <em>gather_profile_stats.py</em> and
+is located inside the <em>bin</em> directory of your Django distribution.</p>
+</div>
+<div class="section" id="profiler-choice">
+<h3>Profiler choice<a class="headerlink" href="#profiler-choice" title="Permalink to this headline">¶</a></h3>
+<p><em>runprofileserver</em> supports two profilers: <em>hotshot</em> and <em>cProfile</em>. Both come
+with the standard Python library but <em>cProfile</em> is more recent and may not be
+available on all systems. For this reason, <em>hotshot</em> is the default profiler.</p>
+<p>However, <em>hotshot</em> <a class="reference external" href="https://docs.python.org/2/library/profile.html#introduction-to-the-profilers">is not maintained anymore</a>
+and using <em>cProfile</em> is usually the recommended way.
+If it is available on your system, you can use it with the option <code class="docutils literal"><span class="pre">--use-cprofile</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir /tmp/my-profile-data
+$ ./manage.py runprofileserver --use-cprofile --prof-path=/tmp/my-profile-data
+</pre></div>
+</div>
+<p>If you used the default profiler but are not able to open the profiling results
+with the <code class="docutils literal"><span class="pre">pstats</span></code> module or with your profiling GUI of choice because of an
+error &#8220;<em>ValueError: bad marshal data (unknown type code)</em>&#8221;, try using <em>cProfile</em>
+instead.</p>
+</div>
+<div class="section" id="kcachegrind">
+<h3>KCacheGrind<a class="headerlink" href="#kcachegrind" title="Permalink to this headline">¶</a></h3>
+<p>Recent versions of <em>runprofileserver</em> have an option to save the profile data
+into a KCacheGrind compatible format. So you can use the excellent KCacheGrind
+tool for analyzing the profile data.</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir /tmp/my-profile-data
+$ ./manage.py runprofileserver --kcachegrind --prof-path=/tmp/my-profile-data
+Validating models...
+0 errors found
+
+Django version X.Y.Z, using settings &#39;complete_project.settings&#39;
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[13/Nov/2008 06:29:38] &quot;GET / HTTP/1.1&quot; 200 41107
+[13/Nov/2008 06:29:39] &quot;GET /site_media/base.css?743 HTTP/1.1&quot; 200 17227
+[13/Nov/2008 06:29:39] &quot;GET /site_media/logo.png HTTP/1.1&quot; 200 3474
+[13/Nov/2008 06:29:39] &quot;GET /site_media/jquery.js HTTP/1.1&quot; 200 31033
+[13/Nov/2008 06:29:39] &quot;GET /site_media/heading.png HTTP/1.1&quot; 200 247
+[13/Nov/2008 06:29:39] &quot;GET /site_media/base.js HTTP/1.1&quot; 200 751
+&lt;ctrl-c&gt;
+$ kcachegrind /tmp/my-profile-data/root.12574391.592.prof
+</pre></div>
+</div>
+<p>Here is a screenshot of how the above commands might look in KCacheGrind:</p>
+<blockquote>
+<div><a class="reference external" href="http://trbs.net/media/misc/django-runprofileserver-kcachegrind-full.jpg">http://trbs.net/media/misc/django-runprofileserver-kcachegrind-full.jpg</a></div></blockquote>
+</div>
+<div class="section" id="links">
+<h3>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://code.djangoproject.com/wiki/ProfilingDjango">http://code.djangoproject.com/wiki/ProfilingDjango</a></li>
+<li><a class="reference external" href="http://www.rkblog.rk.edu.pl/w/p/django-profiling-hotshot-and-kcachegrind/">http://www.rkblog.rk.edu.pl/w/p/django-profiling-hotshot-and-kcachegrind/</a></li>
+<li><a class="reference external" href="http://code.djangoproject.com/browser/django/trunk/django/bin/profiling/gather_profile_stats.py">http://code.djangoproject.com/browser/django/trunk/django/bin/profiling/gather_profile_stats.py</a></li>
+<li><a class="reference external" href="http://www.oluyede.org/blog/2007/03/07/profiling-django/">http://www.oluyede.org/blog/2007/03/07/profiling-django/</a></li>
+<li><a class="reference external" href="http://simonwillison.net/2008/May/22/debugging/">http://simonwillison.net/2008/May/22/debugging/</a></li>
+</ul>
+</div>
+</div>
+<span id="document-runserver_plus"></span><div class="section" id="runserverplus">
+<h2>RunServerPlus<a class="headerlink" href="#runserverplus" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">RunServerPlus-typical runserver with Werkzeug debugger baked in</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>This item requires that you have the <cite>Werkzeug WSGI utilities</cite> installed.
+Included with <a class="reference external" href="http://werkzeug.pocoo.org/">Werkzeug</a> is a kick ass debugger that renders nice
+debugging tracebacks and adds an AJAX based debugger (which allows code execution
+in the context of the traceback’s frames).  Additionally it provides a nice
+access view to the source code.</p>
+</div>
+<div class="section" id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p>To get started we just use the <em>runserver_plus</em> command instead of the normal
+<em>runserver</em> command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runserver_plus
+
+* Running on http://127.0.0.1:8000/
+* Restarting with reloader...
+
+Validating models...
+0 errors found
+
+Django version X.Y.Z, using settings &#39;screencasts.settings&#39;
+Development server is running at http://127.0.0.1:8000/
+Using the Werkzeug debugger (http://werkzeug.pocoo.org/)
+Quit the server with CONTROL-C.
+</pre></div>
+</div>
+<p>Note: all normal runserver options apply. In other words, if you need to change
+the port number or the host information, you can do so like you would normally.</p>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>Instead of the default Django traceback page, the Werkzeug traceback page
+will be shown when an exception occurs.</p>
+<img alt="werkzeug-traceback" src="https://f.cloud.github.com/assets/202559/1261027/2637f826-2c22-11e3-83c6-646acc87808b.png" />
+<p>Along with the typical traceback information we have a couple of options. These
+options appear when hovering over a particular traceback line.  Notice that
+two buttons appear to the right:</p>
+<img alt="werkzeug-options" src="https://f.cloud.github.com/assets/202559/1261035/558ad0ee-2c22-11e3-8ddd-6678d84d77e7.png" />
+<p>The options are:</p>
+<div class="section" id="view-source">
+<h4>View Source<a class="headerlink" href="#view-source" title="Permalink to this headline">¶</a></h4>
+<p>This displays the source underneath the traceback:</p>
+<img alt="werkzeug-source" src="https://f.cloud.github.com/assets/202559/1261036/583c8c42-2c22-11e3-9eb9-5c16b8732512.png" />
+<p>Being able to view the source file is handy because it provides more
+context information around the error.  The actual traceback areas are
+highlighted so they are easy to spot.</p>
+<p>One awkward aspect of the UI is that the page is not scrolled to the bottom.
+At first I thought nothing was happening because of this.</p>
+</div>
+<div class="section" id="interactive-debugging-console">
+<h4>Interactive Debugging Console<a class="headerlink" href="#interactive-debugging-console" title="Permalink to this headline">¶</a></h4>
+<p>Clicking on this button opens up a new pane under the traceback line
+you&#8217;re on. This is the money shot:</p>
+<img alt="werkzeug-debugger" src="https://f.cloud.github.com/assets/202559/1261037/5d12eda6-2c22-11e3-802a-2639ff8813fa.png" />
+<p>An ajax based console appears in the pane and you can start debugging.
+Notice in the screenshot above I did a <cite>print environ</cite> to see what was in the
+environment parameter coming into the function.</p>
+<p><em>WARNING</em>: This should <em>never</em> be used in any kind of production environment.
+Not even for a quick problem check.  I cannot emphasize this enough. The
+interactive debugger allows you to evaluate python code right against the
+server.  You&#8217;ve been warned.</p>
+</div>
+<div class="section" id="ssl">
+<h4>SSL<a class="headerlink" href="#ssl" title="Permalink to this headline">¶</a></h4>
+<p>runserver_plus also supports SSL, so that you can easily debug bugs that to pop up
+when https is used. To use SSL simply provide a file name for certificates;
+a key and certificate file will be automatically generated:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runserver_plus --cert cert
+Validating models...
+0 errors found
+
+Django version X.Y.Z, using settings &#39;mysite.settings&#39;
+Development server is running at http://127.0.0.1:8000/
+Using the Werkzeug debugger (http://werkzeug.pocoo.org/)
+Quit the server with CONTROL-C.
+ * Running on https://127.0.0.1:8000/
+ * Restarting with reloader
+Validating models...
+0 errors found
+
+Django version X.Y.Z, using settings &#39;mysite.settings&#39;
+Development server is running at http://127.0.0.1:8000/
+Using the Werkzeug debugger (http://werkzeug.pocoo.org/)
+Quit the server with CONTROL-C.
+</pre></div>
+</div>
+<p>After running this command, your web application can be accessed through
+<a class="reference external" href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>.</p>
+<p>You will also find that two files are created in  the current working directory:
+a key file and a certificate file. If you run the above command again, these
+certificate files will be reused so that you do not have to keep accepting the
+self-generated certificates from your browser every time. You can also provide
+a specific file for the certificate to be used if you already have one:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runserver_plus --cert /tmp/cert
+</pre></div>
+</div>
+<p>Note that you need the OpenSSL library to use SSL, and Werkzeug 0.9 or later
+if you want to reuse existing certificates.</p>
+<p>To install OpenSSL:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pyOpenSSL
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>RUNSERVERPLUS_SERVER_ADDRESS_PORT</cite> setting can be configured to specify
+which address and port the development server should bind to.</p>
+<p>If you find yourself frequently starting the server with:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python manage.py runserver_plus 0.0.0.0:8000
+</pre></div>
+</div>
+<p>You can use settings to automatically default your development to an address/port:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RUNSERVERPLUS_SERVER_ADDRESS_PORT</span> <span class="o">=</span> <span class="s1">&#39;0.0.0.0:8000&#39;</span>
+</pre></div>
+</div>
+<p>To ensure Werkzeug can log to the console, you may need to add the following
+to your settings:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LOGGING</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="s1">&#39;console&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;logging.StreamHandler&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;loggers&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="s1">&#39;werkzeug&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;console&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;propagate&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="io-calls-and-cpu-usage">
+<h4>IO Calls and CPU Usage<a class="headerlink" href="#io-calls-and-cpu-usage" title="Permalink to this headline">¶</a></h4>
+<p>As noted in <a class="reference external" href="https://github.com/django-extensions/django-extensions/issues/625">gh625</a> <cite>runserver_plus</cite> can be seen to use a lot of CPU and generate many
+I/O when idle.</p>
+<p>This is due to the way <a class="reference external" href="http://werkzeug.pocoo.org/">Werkzeug</a> has implemented the auto reload capability.
+It supports two ways of doing auto reloading either via <cite>stat polling</cite> or <cite>file system events</cite>.</p>
+<p>The <cite>stat polling</cite> approach is pretty brute force and continously issues <cite>stat</cite> system calls which
+causes the CPU and IO load.</p>
+<p>If possible try to install the <a class="reference external" href="https://pypi.python.org/pypi/watchdog">Watchdog</a> package, this should automatically cause <a class="reference external" href="http://werkzeug.pocoo.org/">Werkzeug</a> to use
+<cite>file system events</cite> whenever possible.</p>
+<p>You can read more about this in <a class="reference external" href="http://werkzeug.pocoo.org/docs/0.10/serving/#reloader">Werkzeug documentation</a></p>
+<p>You can also increase the poll interval when using <cite>stat polling</cite> from the default of 1 second. This
+will decrease the CPU load at the expense of file edits taking longer to pick up.</p>
+<p>This can be set two ways, in the django settings file:</p>
+<blockquote>
+<div>RUNSERVERPLUS_POLLER_RELOADER_INTERVAL = 5</div></blockquote>
+<p>or as a commad line argument:</p>
+<blockquote>
+<div>$ python manage.py runserver_plus &#8211;reloader-interval 5</div></blockquote>
+</div>
+</div>
+<div class="section" id="debugger-pin">
+<h3>Debugger PIN<a class="headerlink" href="#debugger-pin" title="Permalink to this headline">¶</a></h3>
+<blockquote class="epigraph">
+<div><p>The following text about the debugger PIN is taken verbatim from the Werkzeug documentation.</p>
+<p class="attribution">&mdash;<a class="reference external" href="http://werkzeug.pocoo.org/docs/0.11/debug/#debugger-pin">http://werkzeug.pocoo.org/docs/0.11/debug/#debugger-pin</a></p>
+</div></blockquote>
+<p>Starting with Werkzeug 0.11 the debugger is additionally protected by a PIN. This is a security helper to
+make it less likely for the debugger to be exploited in production as it has happened to people to keep the
+debugger active. The PIN based authentication is enabled by default.</p>
+<p>When the debugger comes up, on first usage it will prompt for a PIN that is printed to the command line.
+The PIN is generated in a stable way that is specific to the project. In some situations it might be not possible
+to generate a stable PIN between restarts in which case an explicit PIN can be provided through the environment
+variable WERKZEUG_DEBUG_PIN. This can be set to a number and will become the PIN. This variable can also be set
+to the value off to disable the PIN check entirely.</p>
+<p>If the PIN is entered too many times incorrectly the server needs to be restarted.</p>
+<p>This feature is not supposed to entirely secure the debugger. It’s intended to make it harder for an attacker to
+exploit the debugger. Never enable the debugger in production.</p>
+</div>
+</div>
+<span id="document-sync_s3"></span><div class="section" id="sync-s3">
+<h2>sync_s3<a class="headerlink" href="#sync-s3" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">sync your MEDIA_ROOT and STATIC_ROOT folders to S3</td>
+</tr>
+</tbody>
+</table>
+<p>Django command that scans all files in your settings.MEDIA_ROOT and
+settings.STATIC_ROOT folders, then uploads them to S3 with the same
+directory structure.</p>
+<p>This command can optionally do the following but it is off by default:</p>
+<blockquote>
+<div><ul class="simple">
+<li>gzip compress any CSS and Javascript files it finds and adds the
+appropriate &#8216;Content-Encoding&#8217; header.</li>
+<li>set a far future &#8216;Expires&#8217; header for optimal caching.</li>
+<li>upload only media or static files.</li>
+<li>use any other provider compatible with Amazon S3.</li>
+<li>set other than &#8216;public-read&#8217; ACL.</li>
+</ul>
+</div></blockquote>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Upload files to S3 into the bucket &#39;mybucket&#39;
+$ ./manage.py sync_s3 mybucket
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Upload files to S3 into the bucket &#39;mybucket&#39; and enable gzipping CSS/JS files and setting of a far future expires header
+$ ./manage.py sync_s3 mybucket --gzip --expires
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Upload only media files to S3 into the bucket &#39;mybucket&#39;
+$ ./manage.py sync_s3 mybucket  --media-only  # or --static-only
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Upload only media files to a S3 compatible provider into the bucket &#39;mybucket&#39; and set private file ACLs
+$ ./manage.py sync_s3 mybucket  --media-only  --s3host=cs.example.com --acl=private
+</pre></div>
+</div>
+</div>
+<div class="section" id="required-libraries-and-settings">
+<h3>Required libraries and settings<a class="headerlink" href="#required-libraries-and-settings" title="Permalink to this headline">¶</a></h3>
+<p>This management command requires the boto library and was tested with version
+1.4c:</p>
+<blockquote>
+<div><a class="reference external" href="https://github.com/boto/boto">https://github.com/boto/boto</a></div></blockquote>
+<p>It also requires an account with Amazon Web Services (AWS) and the AWS S3 keys.
+Bucket name is required and cannot be empty.
+The keys and bucket name are added to your settings.py file, for example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># settings.py</span>
+<span class="n">AWS_ACCESS_KEY_ID</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">AWS_SECRET_ACCESS_KEY</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">AWS_BUCKET_NAME</span> <span class="o">=</span> <span class="s1">&#39;bucket&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="optional-settings">
+<h3>Optional settings<a class="headerlink" href="#optional-settings" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to customize sync_s3 directly from django settings file, for example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># settings.py</span>
+<span class="n">AWS_S3_HOST</span> <span class="o">=</span> <span class="s1">&#39;cs.example.com&#39;</span>
+<span class="n">AWS_DEFAULT_ACL</span> <span class="o">=</span> <span class="s1">&#39;private&#39;</span>
+<span class="n">SYNC_S3_PREFIX</span> <span class="o">=</span> <span class="s1">&#39;some_prefix&#39;</span>
+<span class="n">FILTER_LIST</span> <span class="o">=</span> <span class="s1">&#39;dir1, dir2&#39;</span>
+<span class="n">AWS_CLOUDFRONT_DISTRIBUTION</span> <span class="o">=</span> <span class="s1">&#39;E27LVI50CSW06W&#39;</span>
+<span class="n">SYNC_S3_RENAME_GZIP_EXT</span> <span class="o">=</span> <span class="s1">&#39;.gz&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-sqldiff"></span><div class="section" id="sqldiff">
+<h2>sqldiff<a class="headerlink" href="#sqldiff" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Prints the ALTER TABLE statements for the given appnames.</td>
+</tr>
+</tbody>
+</table>
+<p>Django command that scans all models for the given appnames and compares
+their database schema with the real database tables.</p>
+<p>It indicates how columns in the database are different from the SQL that would
+be generated by Django. This command is not a database migration tool, though
+it might certainly be of help during migrations. Its purpose is to show the
+current differences as a way to check or debug your models compared to
+the real database tables and columns.</p>
+<div class="section" id="supported-databases">
+<h3>Supported Databases<a class="headerlink" href="#supported-databases" title="Permalink to this headline">¶</a></h3>
+<p>Currently the following databases are supported:</p>
+<ul class="simple">
+<li>PostgreSQL</li>
+<li>Sqlite3</li>
+<li>MySQL</li>
+<li>Oracle</li>
+</ul>
+<p>Patches to support other databases are welcome! :-)</p>
+</div>
+<div class="section" id="exit-codes">
+<h3>Exit Codes<a class="headerlink" href="#exit-codes" title="Permalink to this headline">¶</a></h3>
+<p>Exit status is 0 if inputs are the same, 1 if different, 2 if trouble.</p>
+</div>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span># View SQL differences for all installed applications
+$ ./manage.py sqldiff -a
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># View SQL differences for all installed applications using text instead of SQL
+$ ./manage.py sqldiff -a -t
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-sqlcreate"></span><div class="section" id="sqlcreate">
+<h2>sqlcreate<a class="headerlink" href="#sqlcreate" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Helps you setup your database(s) more easily</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>Stop creating databases by hand.  Your settings.py file already contains the correct
+information, so DRY.</p>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>$ python manage.py sqlcreate [&#8211;router=&lt;routername&gt;] | &lt;my_database_shell_command&gt;</div></blockquote>
+<p>It will spit out SQL which you can review (if you want). Ultimately you want to
+pipe it into the database shell command of your choice.</p>
+<p>If there were a good way to ensure that the user in the database settings had the
+proper permissions, we could submit the commands straight to the database.
+However, due to the nature of this portion of the project setup, that will never happen.</p>
+</div>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="postgresql">
+<h4>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>$ ./manage.py sqlcreate [&#8211;router=&lt;routername&gt;] | psql -U &lt;db_administrator&gt; -W</div></blockquote>
+</div>
+<div class="section" id="mysql">
+<h4>MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>$ ./manage.py sqlcreate [&#8211;router=&lt;routername&gt;] | mysql -u &lt;db_administrator&gt; -p</div></blockquote>
+</div>
+</div>
+<div class="section" id="known-issues">
+<h3>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>CREATE DATABASE is not SQL standard so might not work everywhere.</li>
+<li>When using fallback user is not created and password is not set.
+But it does try to do a GRANT to the database user.</li>
+<li>Missing options for tablespaces, etc.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<span id="document-sqldsn"></span><div class="section" id="sqldsn">
+<h2>sqldsn<a class="headerlink" href="#sqldsn" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Prints Data Source Name connection string on stdout</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="supported-databases">
+<h3>Supported Databases<a class="headerlink" href="#supported-databases" title="Permalink to this headline">¶</a></h3>
+<p>Currently the following databases are supported:</p>
+<ul class="simple">
+<li>PostgreSQL (psycopg2 or postgis)</li>
+<li>Sqlite3</li>
+<li>MySQL</li>
+</ul>
+<p>Patches to support other databases are welcome! :-)</p>
+</div>
+<div class="section" id="exit-codes">
+<h3>Exit Codes<a class="headerlink" href="#exit-codes" title="Permalink to this headline">¶</a></h3>
+<p>Exit status is 0</p>
+</div>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Prints the DSN for the default database
+$ ./manage.py sqldsn
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Prints the DSN for all databases
+$ ./manage.py sqldsn --all
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Print the DSN for database named &#39;slave&#39;
+$ ./manage.py sqldsn --router=slave
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Print all DSN styles available for the default database
+$ ./manage.py sqldsn --style=all
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Create .pgpass file for default database by using the quiet option
+$ ./manage.py sqldsn -q --style=pgpass &gt; .pgpass
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-validate_templates"></span><div class="section" id="validate-templates">
+<h2>validate_templates<a class="headerlink" href="#validate-templates" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">Checks templates on syntax or compile errors.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="options">
+<h3>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="verbosity">
+<h4>verbosity<a class="headerlink" href="#verbosity" title="Permalink to this headline">¶</a></h4>
+<p>A higher verbosity level will print out all the files that are processed
+instead of only the ones that contain errors.</p>
+</div>
+<div class="section" id="break">
+<h4>break<a class="headerlink" href="#break" title="Permalink to this headline">¶</a></h4>
+<p>Do not continue scanning other templates after the first failure.</p>
+</div>
+<div class="section" id="includes">
+<h4>includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h4>
+<p>Use -i (can be used multiple times) to add directories to the TEMPLATE DIRS.</p>
+</div>
+</div>
+<div class="section" id="settings">
+<h3>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="validate-templates-extra-template-dirs">
+<h4>VALIDATE_TEMPLATES_EXTRA_TEMPLATE_DIRS<a class="headerlink" href="#validate-templates-extra-template-dirs" title="Permalink to this headline">¶</a></h4>
+<p>You can use <cite>VALIDATE_TEMPLATES_EXTRA_TEMPLATE_DIRS</cite> to include a number of template
+dirs by default directly from the settings file. This can be useful for situations
+where TEMPLATE DIRS is dynamically generated or switched in middleware, or when you
+have other template dirs for external applications like celery, and you want to
+check those as well.</p>
+</div>
+</div>
+<div class="section" id="usage-example">
+<h3>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>./manage.py validate_templates</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Copyright (C) 2008-2015 Michael Trier, Bas van Oostveen and contributors.
+      
+        <span class="commit">
+          Revision <code>7d284cce</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/en/latest/">latest</a></dd>
+        
+          <dd><a href="/en/stable/">stable</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//readthedocs.org/projects/django-extensions/downloads/pdf/latest/">pdf</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/django-extensions/downloads/htmlzip/latest/">htmlzip</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/django-extensions/downloads/epub/latest/">epub</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/django-extensions/?fromdocs=django-extensions">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/django-extensions/?fromdocs=django-extensions">Builds</a>
+          </dd>
+      </dl>
+      <hr/>
+      Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
+
+    </div>
+  </div>
+
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.7.8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
