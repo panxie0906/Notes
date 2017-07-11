@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Learngit
-Learn git from Liao XueFeng Blog
 =======
 # Notes
 Some learning notes in my project
